@@ -185,21 +185,6 @@ function animateCounters() {
   });
 }
 
-new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting) {
-    animateCounters();
-    obs.disconnect();
-  }
-}, { threshold: 0.3 }).observe(document.getElementById('about'));
-// Note: assign after creation via workaround
-const obs = new IntersectionObserver(() => {});
-new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting) { animateCounters(); }
-}, { threshold: 0.3, once: true }).observe(document.getElementById('about') || document.body);
-
-/* =============================================
-   Proper counter with disconnect
-   ============================================= */
 (function() {
   const el = document.getElementById('about');
   if (!el) return;
@@ -207,6 +192,7 @@ new IntersectionObserver(entries => {
   const io = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting && !fired) {
       fired = true;
+      io.disconnect();
       animateCounters();
     }
   }, { threshold: 0.25 });
