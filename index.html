@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arun Agarwal — ML Engineer, Data Scientist, UC Berkeley MIDS Student. Building intelligent systems at the intersection of AI, data engineering, and real-world impact.">
+  <meta property="og:title" content="Arun Agarwal | ML Engineer & Data Scientist">
+  <meta property="og:description" content="ML Engineer at Vanguard · UC Berkeley MIDS · 4.0 GPA · LLM evaluation, data pipelines, Gen-AI">
+  <meta property="og:type" content="website">
+  <title>Arun Agarwal | ML Engineer & Data Scientist</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">AA<span class="dot">.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about"      class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects"   class="nav-link">Projects</a>
+        <a href="#research"   class="nav-link">Research</a>
+        <a href="#skills"     class="nav-link">Skills</a>
+        <a href="#education"  class="nav-link">Education</a>
+        <a href="#contact"    class="nav-link">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+        <button id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-greeting">Hello, I'm</div>
+      <h1 class="hero-name">Arun Agarwal</h1>
+      <div class="hero-roles">
+        <span class="role-prefix">I'm a </span><span id="typewriter" class="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">
+        ML Engineer &middot; Data Scientist &middot; UC Berkeley MIDS '26<br>
+        Building AI systems that turn messy data into decisions that matter.
+      </p>
+      <div class="hero-cta">
+        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-file-alt"></i> Resume
+        </a>
+        <a href="https://linkedin.com/in/arunagarwal23" target="_blank" class="btn btn-outline">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/aagarwal17" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-badges" id="hero-badges">
+      <div class="floating-badge" style="--delay:0s">
+        <i class="fas fa-brain"></i> ML Engineer
+      </div>
+      <div class="floating-badge" style="--delay:0.6s">
+        <i class="fas fa-database"></i> Data Scientist
+      </div>
+      <div class="floating-badge" style="--delay:1.2s">
+        <i class="fas fa-graduation-cap"></i> 4.0 GPA @ Berkeley
+      </div>
+      <div class="floating-badge" style="--delay:1.8s">
+        <i class="fas fa-award"></i> AWS Certified
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ================================================
+       ABOUT
+  ================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right">
+          <div class="image-wrapper">
+            <img src="assets/img/profile.jpg" alt="Arun Agarwal" loading="lazy">
+          </div>
+          <div class="about-socials">
+            <a href="mailto:arun.agarwal@berkeley.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/arunagarwal23" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aagarwal17" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="about-text-col" data-aos="fade-left">
+          <p class="about-bio">
+            I'm an ML Engineer and Data Scientist with <strong>3+ years of full-time experience at
+            The Vanguard Group</strong>, where I've built LLM evaluation frameworks, agentic pipelines,
+            enterprise data lakes, and AI-powered applications across multiple Technology Leadership
+            Program rotations.
+          </p>
+          <p class="about-bio">
+            I'm currently completing my <strong>Master's in Information and Data Science at UC
+            Berkeley</strong> (GPA 4.0), with a deep focus on scalable ML, NLP, and Generative AI.
+            My work sits at the intersection of research rigor and production engineering — I care
+            about systems that are <em>measurable, trustworthy, and impactful</em>.
+          </p>
+          <p class="about-bio">
+            Outside of ML, I've contributed to ecological research (species richness modeling,
+            invasive pest tracking), organized quantum computing hackathons, and mentored junior
+            engineers through Vanguard's Technology Leadership Program.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-val"><span class="stat-num" data-target="3">0</span><span class="stat-suf">+</span></div>
+              <div class="stat-lbl">Years at Vanguard</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val"><span class="stat-num" data-target="4">0</span><span class="stat-suf">.0</span></div>
+              <div class="stat-lbl">Berkeley GPA</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val"><span class="stat-num" data-target="15">0</span><span class="stat-suf">+</span></div>
+              <div class="stat-lbl">Projects Built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val"><span class="stat-num" data-target="5">0</span><span class="stat-suf">+</span></div>
+              <div class="stat-lbl">Research Roles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       EXPERIENCE
+  ================================================ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Experience</h2>
+      <div class="timeline">
+
+        <!-- MLE -->
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-left">
+                <h3>Machine Learning Engineer</h3>
+                <h4>The Vanguard Group &nbsp;<span class="pill">TLP · AWM</span></h4>
+              </div>
+              <span class="tl-date">Nov 2024 – Jun 2025</span>
+            </div>
+            <p class="tl-loc"><i class="fas fa-map-marker-alt"></i> Malvern, PA · Center for Analytics &amp; Insights</p>
+            <ul class="tl-bullets">
+              <li>Built unified LLM evaluation framework using DeepEval / RAGAS / Arize — custom G-Eval / DAG judges, Data Explorer for structured chain-of-thought scoring</li>
+              <li>Led enterprise adoption: co-authored evaluation playbook, mentored peers on SageMaker and Arize, delivered capstone demo aligning stakeholders</li>
+              <li>Elevated Gen-AI observability across pipelines (FRS, VoC, Wealth/Asset) — shortened issue detection cycles with tracing, LLM-as-a-judge evaluators, and custom monitors/alerts</li>
+              <li>Standardized CI/CD orchestration, improved rollback safeguards, and tightened experiment tracking to reduce operational risk</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Python</span><span>LLM Evaluation</span><span>DeepEval</span><span>RAGAS</span><span>Arize</span><span>SageMaker</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DS + Quantum -->
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-left">
+                <h3>Data Scientist &amp; Quantum Computing Researcher</h3>
+                <h4>The Vanguard Group &nbsp;<span class="pill">TLP · PI Eng</span></h4>
+              </div>
+              <span class="tl-date">Nov 2024 – Jun 2025</span>
+            </div>
+            <p class="tl-loc"><i class="fas fa-map-marker-alt"></i> Malvern, PA · Center for Analytics &amp; Insights</p>
+            <ul class="tl-bullets">
+              <li>Led Workflow Automation — delivered Gen-AI powered UI, chatbot, workflow diagram, API Gateway, Lambda, SageMaker Endpoint, and S3 storage end-to-end</li>
+              <li>Contributed to internal paper on Portfolio Optimization via Quantum Computing; organized Quantum hackathon and ran experiments on simulation data</li>
+              <li>Engineered Friction Reduction System (FRS) pipeline using agentic architecture</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Gen-AI</span><span>Quantum Computing</span><span>API Gateway</span><span>Lambda</span><span>S3</span><span>Agentic Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI/ML Experimenter -->
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-left">
+                <h3>AI / ML Experimenter</h3>
+                <h4>The Vanguard Group &nbsp;<span class="pill">TLP · Conversational</span></h4>
+              </div>
+              <span class="tl-date">Apr 2024 – Nov 2024</span>
+            </div>
+            <p class="tl-loc"><i class="fas fa-map-marker-alt"></i> Malvern, PA · Personal Investor Technology</p>
+            <ul class="tl-bullets">
+              <li>Developed and deployed 50+ Kore AI dialog tasks — saved ~9 seconds/call across thousands of daily interactions, reduced Average Hold Time by 4.5+ minutes</li>
+              <li>Supported RDM Containment Infrastructure: DC2/RDM API integration, unit tests, RMD status chatbot update, technology access management</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Kore AI</span><span>NLP</span><span>Chatbots</span><span>API Integration</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Engineer -->
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-left">
+                <h3>Data Engineer</h3>
+                <h4>The Vanguard Group &nbsp;<span class="pill">TLP · CDAO</span></h4>
+              </div>
+              <span class="tl-date">Aug 2023 – Apr 2024</span>
+            </div>
+            <p class="tl-loc"><i class="fas fa-map-marker-alt"></i> Malvern, PA · Chief Data Analytics Office</p>
+            <ul class="tl-bullets">
+              <li>Led Archer Content API (CAPI) Initiative — modernized ingestion from Ballast Point, decreased time to insights, saved ~$6,000 in infrastructure costs</li>
+              <li>Elevated codebase quality: test coverage analysis for entire pipeline, unit tests, security enhancements</li>
+              <li>Ingested 10+ data blocks and subforms using Python, AWS, and SQL for cross-enterprise data lake</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Python</span><span>AWS</span><span>SQL</span><span>Lambda</span><span>Data Lake</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Dev -->
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-left">
+                <h3>Application Developer</h3>
+                <h4>The Vanguard Group &nbsp;<span class="pill">C2C · GIFS</span></h4>
+              </div>
+              <span class="tl-date">Jun 2022 – Aug 2023</span>
+            </div>
+            <p class="tl-loc"><i class="fas fa-map-marker-alt"></i> Malvern, PA · Global Investment Financial Systems</p>
+            <ul class="tl-bullets">
+              <li>Built 15+ Tableau dashboards for ~180 datasets — demonstrated millions in potential savings to division leaders</li>
+              <li>Automated TITO report production: reverse-engineered 11 Excel Power Queries, cleaned 45,000+ data instances using Python + CI/CD lambda functions</li>
+              <li>Developed front-end of stock market simulation tool using ReactJS and real-time Vanguard APIs</li>
+              <li>Conducted vulnerability assessments across 60+ repositories post-internship</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Tableau</span><span>Python</span><span>ReactJS</span><span>CI/CD</span><span>APIs</span><span>Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teaching Assistant -->
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-left">
+                <h3>Teaching Assistant — Discrete Mathematics</h3>
+                <h4>Temple University · College of Science &amp; Technology</h4>
+              </div>
+              <span class="tl-date">Jan – May 2021</span>
+            </div>
+            <p class="tl-loc"><i class="fas fa-map-marker-alt"></i> Philadelphia, PA</p>
+            <ul class="tl-bullets">
+              <li>Managed 27+ students daily; led Recitation sections, graded exams, held weekly office hours</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PROJECTS
+  ================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Selected Projects</h2>
+
+      <div class="filter-tabs" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML / AI</button>
+        <button class="filter-btn" data-filter="de">Data Engineering</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="web">Web / App</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-cat="ml de" data-aos="fade-up">
+          <div class="proj-top">
+            <i class="fas fa-shield-alt proj-icon"></i>
+            <div class="proj-links">
+              <a href="https://github.com/aagarwal17/food-safety-intelligence" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="proj-label live">Current Capstone</span>
+          <h3>Food Safety Intelligence</h3>
+          <p>ML pipeline predicting food-safety risk for ~14,000 Chicago food establishments. XGBoost + logistic regression with SHAP explainability, served via a Next.js web app on AWS Amplify.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>Next.js</span><span>AWS</span><span>DuckDB</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml de" data-aos="fade-up" data-aos-delay="80">
+          <div class="proj-top">
+            <i class="fas fa-plane proj-icon"></i>
+            <div class="proj-links">
+              <a href="https://github.com/aagarwal17/datasci_261_ML_At_Scale" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Flight Delay Prediction at Scale</h3>
+          <p>End-to-end PySpark pipeline over 31.1M flights (2015–2019). Engineered 112 features (network centrality, interaction terms, weather imputation). MLP / RF / GBT with temporal splits — F₂ 0.73, recall 82.87%.</p>
+          <div class="proj-tags">
+            <span>PySpark</span><span>MLP</span><span>Random Forest</span><span>GBT</span><span>Databricks</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml nlp" data-aos="fade-up" data-aos-delay="160">
+          <div class="proj-top">
+            <i class="fas fa-brain proj-icon"></i>
+            <div class="proj-links">
+              <a href="https://github.com/aagarwal17/datasci_266_emotion_classification" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Emotion Classification (NLP)</h3>
+          <p>Fine-tuned transformer models (BERT, RoBERTa) for multi-class emotion detection in text. Applied to social media and clinical NLP contexts using HuggingFace and PyTorch.</p>
+          <div class="proj-tags">
+            <span>BERT</span><span>RoBERTa</span><span>PyTorch</span><span>HuggingFace</span><span>NLP</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml web" data-aos="fade-up">
+          <div class="proj-top">
+            <i class="fas fa-palette proj-icon"></i>
+            <div class="proj-links">
+              <a href="https://github.com/airicbear/cis-4496-project" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://cis-4496-project.vercel.app/" target="_blank" aria-label="Live site"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>Artificially Creative</h3>
+          <p>GAN-based image style transfer — translated 7,028 photos into Monet-style paintings (Kaggle). Built a live web interface for Van Gogh, Cézanne, and Ukiyo-e style transfer using CycleGAN.</p>
+          <div class="proj-tags">
+            <span>GANs</span><span>CycleGAN</span><span>TensorFlow</span><span>React</span><span>Vercel</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="de" data-aos="fade-up" data-aos-delay="80">
+          <div class="proj-top">
+            <i class="fas fa-utensils proj-icon"></i>
+            <div class="proj-links">
+              <a href="https://github.com/mids-w205/project-3-aagarwal17" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>AGM Food Delivery Expansion</h3>
+          <p>Data-driven expansion strategy using SQL + NoSQL (MongoDB, Redis, Neo4j). Applied graph centrality algorithms to identify optimal BART station pickup locations, cutting delivery times and costs.</p>
+          <div class="proj-tags">
+            <span>SQL</span><span>Neo4j</span><span>MongoDB</span><span>Redis</span><span>Graph Theory</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml" data-aos="fade-up" data-aos-delay="160">
+          <div class="proj-top">
+            <i class="fas fa-building proj-icon"></i>
+          </div>
+          <h3>Building Energy Consumption</h3>
+          <p>Multiple regression models in R to analyze Site Energy Usage Intensity across building types. Pearson correlation, VIF analysis, Breusch-Pagan tests. Identified elevation and extreme heat as key drivers.</p>
+          <div class="proj-tags">
+            <span>R</span><span>Regression</span><span>Statistics</span><span>Tidyverse</span><span>Visualization</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml web" data-aos="fade-up">
+          <div class="proj-top">
+            <i class="fas fa-concierge-bell proj-icon"></i>
+            <div class="proj-links">
+              <a href="https://github.com/aagarwal17/Restaurant-Recommendation-System" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Restaurant Recommendation System</h3>
+          <p>Collaborative filtering + content-based recommendations over 6.6M+ Yelp reviews using PySpark. Software design capstone with full-stack deployment.</p>
+          <div class="proj-tags">
+            <span>PySpark</span><span>Collaborative Filtering</span><span>Yelp API</span><span>Java</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-cat="ml de" data-aos="fade-up" data-aos-delay="80">
+          <div class="proj-top">
+            <i class="fas fa-dna proj-icon"></i>
+          </div>
+          <h3>Disease-Gene Network Analysis</h3>
+          <p>Wrangled 30,000+ diseases and 20,000+ genes into a NetworkX digraph. Applied deep learning to discover novel disease-gene interactions. Presented at MID-SURE 2021 (300+ attendees, MSU).</p>
+          <div class="proj-tags">
+            <span>NetworkX</span><span>Deep Learning</span><span>Bioinformatics</span><span>Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       RESEARCH
+  ================================================ -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Research</h2>
+      <div class="research-grid">
+
+        <div class="research-card" data-aos="fade-up">
+          <div class="res-icon"><i class="fas fa-globe-americas"></i></div>
+          <div class="res-body">
+            <span class="res-date">Jan – May 2023</span>
+            <h3>Caribbean Biodiversity &amp; Species Richness</h3>
+            <h4>Integrative Ecology Lab (Dr. Gleditsch &amp; Dr. Helmus), Temple University</h4>
+            <p>Math &amp; CS Capstone. Analyzed species richness across 835 islands using 54 biogeographic variables. Built 30+ ML models — ensemble methods reached 76.85% accuracy. Created relational database (Python + SQLite) across 11 datasets.</p>
+            <div class="tech-tags"><span>Python</span><span>ML</span><span>SQLite</span><span>Ecology</span></div>
+          </div>
+        </div>
+
+        <div class="research-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="res-icon"><i class="fas fa-bug"></i></div>
+          <div class="res-body">
+            <span class="res-date">Jan – May 2022</span>
+            <h3>Spotted Lanternfly Distribution Modeling</h3>
+            <h4>Integrative Ecology Lab (Dr. De Bona &amp; Dr. Helmus), Temple University</h4>
+            <p>Built cyberinfrastructure aggregating 350,000 SLF datapoints using Docker and CI/CD. Deployed harmonized dataset for USDA and PDA collaborators to model invasive pest spread.</p>
+            <div class="tech-tags"><span>Docker</span><span>Python</span><span>CI/CD</span><span>Cloud</span></div>
+          </div>
+        </div>
+
+        <div class="research-card" data-aos="fade-up">
+          <div class="res-icon"><i class="fas fa-microscope"></i></div>
+          <div class="res-body">
+            <span class="res-date">May – Aug 2021</span>
+            <h3>Computational Genomics &amp; Disease Prediction</h3>
+            <h4>Krishnan Lab for Computational Genomics, Michigan State University (REU)</h4>
+            <p>Applied deep learning to 30,000+ diseases and 20,000+ genes to discover novel disease-gene interactions via NetworkX digraph. Presented at MID-SURE 2021 to 300+ attendees.</p>
+            <div class="tech-tags"><span>Deep Learning</span><span>NetworkX</span><span>Bioinformatics</span></div>
+          </div>
+        </div>
+
+        <div class="research-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="res-icon"><i class="fas fa-eye"></i></div>
+          <div class="res-body">
+            <span class="res-date">Jan – May 2021</span>
+            <h3>Convolutional Neural Network Research</h3>
+            <h4>Dr. Longin Jan Latecki, Temple University</h4>
+            <p>Optimized a greeting card firm's image search tool by constructing a CNN. Completed Stanford's CNNs for Visual Recognition course during the research engagement.</p>
+            <div class="tech-tags"><span>CNN</span><span>Computer Vision</span><span>Deep Learning</span></div>
+          </div>
+        </div>
+
+        <div class="research-card" data-aos="fade-up">
+          <div class="res-icon"><i class="fas fa-cloud"></i></div>
+          <div class="res-body">
+            <span class="res-date">Aug – Dec 2020</span>
+            <h3>Cloud/Edge Computing Job Scheduling</h3>
+            <h4>Dr. Jie Wu's Lab, Temple University (Science Scholars)</h4>
+            <p>Collaborated with graduate students to develop an online job scheduler for cloud/edge computing clusters, using ML techniques to reduce average job finish time.</p>
+            <div class="tech-tags"><span>Cloud Computing</span><span>ML</span><span>Optimization</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="publication-box" data-aos="fade-up">
+        <i class="fas fa-file-alt"></i>
+        <div>
+          <strong>Conference Poster</strong>
+          <p>Agarwal A, Yannakopoulos A, Krishnan A. "Exploration and Analysis of Gene-Disease Associations." Mid-Michigan Symposium for Undergraduate Research Experiences (MID-SURE). Michigan State University, East Lansing, MI. July 28, 2021.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SKILLS
+  ================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-cat" data-aos="fade-up">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="st expert">Python</span>
+            <span class="st expert">SQL</span>
+            <span class="st proficient">R</span>
+            <span class="st proficient">Java</span>
+            <span class="st proficient">C</span>
+            <span class="st familiar">HTML / CSS</span>
+            <span class="st familiar">LaTeX</span>
+          </div>
+        </div>
+
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="60">
+          <h3><i class="fas fa-robot"></i> ML / AI</h3>
+          <div class="skill-tags">
+            <span class="st expert">Scikit-learn</span>
+            <span class="st expert">XGBoost</span>
+            <span class="st expert">SHAP</span>
+            <span class="st expert">LLM Evaluation</span>
+            <span class="st proficient">PyTorch</span>
+            <span class="st proficient">TensorFlow</span>
+            <span class="st proficient">HuggingFace</span>
+            <span class="st proficient">DeepEval</span>
+            <span class="st proficient">RAGAS</span>
+            <span class="st proficient">PySpark</span>
+          </div>
+        </div>
+
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="120">
+          <h3><i class="fab fa-aws"></i> Cloud &amp; Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="st expert">AWS</span>
+            <span class="st expert">SageMaker</span>
+            <span class="st expert">Lambda</span>
+            <span class="st expert">S3</span>
+            <span class="st expert">DynamoDB</span>
+            <span class="st expert">API Gateway</span>
+            <span class="st proficient">Docker</span>
+            <span class="st proficient">CI/CD</span>
+            <span class="st proficient">ECS / EC2</span>
+          </div>
+        </div>
+
+        <div class="skill-cat" data-aos="fade-up">
+          <h3><i class="fas fa-database"></i> Data &amp; Databases</h3>
+          <div class="skill-tags">
+            <span class="st expert">Pandas</span>
+            <span class="st expert">Apache Spark</span>
+            <span class="st expert">PostgreSQL</span>
+            <span class="st expert">DuckDB</span>
+            <span class="st proficient">MongoDB</span>
+            <span class="st proficient">Neo4j</span>
+            <span class="st proficient">Redis</span>
+            <span class="st familiar">Oracle SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="60">
+          <h3><i class="fas fa-chart-bar"></i> Analytics &amp; Observability</h3>
+          <div class="skill-tags">
+            <span class="st expert">Tableau</span>
+            <span class="st expert">Matplotlib</span>
+            <span class="st proficient">Arize</span>
+            <span class="st proficient">Honeycomb</span>
+            <span class="st proficient">Splunk</span>
+            <span class="st familiar">Power BI</span>
+          </div>
+        </div>
+
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="120">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="skill-tags">
+            <span class="st cert">AWS Cloud Practitioner</span>
+            <span class="st cert">Kore AI Automation</span>
+            <span class="st cert">IBM Qiskit Quantum</span>
+            <span class="st cert-prog">AWS ML Associate <em>(in progress)</em></span>
+            <span class="st cert-prog">PSM I <em>(in progress)</em></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="legend" data-aos="fade-up">
+        <span><span class="ldot expert-d"></span> Expert</span>
+        <span><span class="ldot proficient-d"></span> Proficient</span>
+        <span><span class="ldot familiar-d"></span> Familiar</span>
+        <span><span class="ldot cert-d"></span> Certified</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       EDUCATION
+  ================================================ -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card" data-aos="fade-right">
+          <div class="edu-head">
+            <div class="edu-logo berkeley">UC</div>
+            <div>
+              <h3>University of California, Berkeley</h3>
+              <h4>School of Information</h4>
+              <span class="edu-when">Expected August 2026</span>
+            </div>
+          </div>
+          <p class="edu-degree">Master of Information and Data Science (MIDS)</p>
+          <p class="edu-gpa"><i class="fas fa-star-half-alt"></i> GPA: 4.0 / 4.0</p>
+          <p class="edu-courses">
+            <strong>Coursework:</strong> Intro to Data Science Programming &middot; Research Design &amp; Analysis &middot;
+            Statistics for Data Science &middot; Fundamentals of Data Engineering &middot;
+            Applied Machine Learning &middot; NLP with Deep Learning &middot; ML at Scale
+          </p>
+        </div>
+
+        <div class="edu-card" data-aos="fade-left">
+          <div class="edu-head">
+            <div class="edu-logo temple">TU</div>
+            <div>
+              <h3>Temple University</h3>
+              <h4>College of Science &amp; Technology · University Honors Program</h4>
+              <span class="edu-when">May 2023</span>
+            </div>
+          </div>
+          <p class="edu-degree">B.S. Data Science &nbsp;·&nbsp; B.S. Mathematics &amp; Computer Science &nbsp;·&nbsp; Certificate in Spanish</p>
+          <p class="edu-gpa"><i class="fas fa-star-half-alt"></i> GPA: 3.99 / 4.0</p>
+          <div class="honors-row">
+            <span class="honor"><i class="fas fa-medal"></i> Summa Cum Laude</span>
+            <span class="honor"><i class="fas fa-scroll"></i> Phi Beta Kappa</span>
+            <span class="honor"><i class="fas fa-list"></i> Dean's List</span>
+            <span class="honor"><i class="fas fa-dollar-sign"></i> Presidential Scholarship</span>
+            <span class="honor"><i class="fas fa-star"></i> Distinction in Double Major</span>
+          </div>
+          <p class="edu-courses">
+            <strong>Coursework:</strong> Data Structures &amp; Algorithms &middot; Foundations of Machine Learning &middot;
+            Knowledge Discovery &amp; Data Mining &middot; Systems Programming &middot; Database Systems &middot;
+            Probability Theory &middot; Software Design
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Awards Strip -->
+      <div class="awards-strip" data-aos="fade-up">
+        <h3>Awards &amp; Recognition</h3>
+        <div class="awards-grid">
+          <div class="award-item">
+            <i class="fas fa-trophy"></i>
+            <span>Summa Cum Laude — Top 2% of baccalaureate recipients</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-book"></i>
+            <span>Phi Beta Kappa — Oldest U.S. undergraduate honor society</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-list-ol"></i>
+            <span>Dean's List — Top 16% of CST students, every semester</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-dollar-sign"></i>
+            <span>Temple Presidential Scholarship — Full tuition merit award</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-hands-helping"></i>
+            <span>President Student Service Award — 100+ volunteer hours / year</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-flask"></i>
+            <span>ODSC AI Bootcamp + 6-Week Data Science Course (2025)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CONTACT
+  ================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <div class="contact-wrapper" data-aos="fade-up">
+        <p class="contact-blurb">
+          I'm open to new opportunities in ML Engineering, AI Research, and Data Science.
+          Whether you have a question, a project idea, or just want to connect — my inbox is always open.
+        </p>
+        <div class="contact-cards">
+          <a href="mailto:arun.agarwal@berkeley.edu" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>arun.agarwal@berkeley.edu</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/arunagarwal23" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>arunagarwal23</span>
+            </div>
+          </a>
+          <a href="https://github.com/aagarwal17" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>aagarwal17</span>
+            </div>
+          </a>
+          <div class="contact-card no-hover">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Location</strong>
+              <span>West Chester, PA</span>
+            </div>
+          </div>
+        </div>
+        <a href="mailto:arun.agarwal@berkeley.edu" class="btn btn-primary btn-lg">
+          <i class="fas fa-paper-plane"></i> Say Hello
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Designed &amp; Built by <strong>Arun Agarwal</strong></p>
+      <div class="footer-links">
+        <a href="https://github.com/aagarwal17" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/arunagarwal23" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:arun.agarwal@berkeley.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
